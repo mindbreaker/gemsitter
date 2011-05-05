@@ -1,0 +1,25 @@
+== Gemsitter
+
+Gemsitter is a gem to check the installed gem's in your webapplication for updates. This gem works for Ruby on Rails 3
+
+== How to
+
+To get the gem run:
+
+    gem install gemsitter
+
+You can include this line in one of your test files:
+
+    Gemsitter.run
+
+To configurate this gem, you can add some optional Parameters:
+
+    Gemsitter.run(interval)
+
+<b>Interval:</b> The time how often the temporary file will be updated with rubygems.org (:month, :week, :day). Standard is weekly.
+
+Run gemsitter as rake task:
+
+    rake gemsitter
+  
+    
